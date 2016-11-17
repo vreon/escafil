@@ -174,8 +174,15 @@ class APIObject(metaclass=APIObjectMeta):
             'PATCH', self.url(), headers=headers, data=json.dumps(patch)
         )
 
-    def delete(self):
-        self.client.request('DELETE', self.url())
+    def delete(self, data=None):
+        headers = {'content-type': 'application/json'}
+
+        if data:
+            data = json.dumps(data)
+
+        self.client.request(
+            'DELETE', self.url(), headers=headers, data=data
+        )
 
     def __repr__(self):
         return '<{} "{}">'.format(
