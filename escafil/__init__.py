@@ -129,7 +129,7 @@ class APIObjectMeta(type):
             cls.collection = name.lower() + 's'
 
 
-class APIObject(object, metaclass=APIObjectMeta):
+class APIObject(metaclass=APIObjectMeta):
     api = 'api/v1'
     collection = None
     namespaced = True
