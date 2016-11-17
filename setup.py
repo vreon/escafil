@@ -7,6 +7,7 @@ setup(
     description = 'A minimal Kubernetes API client',
     author = 'Jesse Dubay',
     author_email = 'jesse@jessedubay.com',
+    url = 'https://github.com/vreon/escafil',
     keywords = ['kubernetes'],
     install_requires=[
         'requests>=2,<3',
