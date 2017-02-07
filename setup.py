@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name = 'escafil',
     packages = ['escafil'],
-    version = '0.0.2',
+    version = '0.0.3',
     description = 'A minimal Kubernetes API client',
     author = 'Jesse Dubay',
     author_email = 'jesse@jessedubay.com',
