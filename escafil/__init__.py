@@ -108,7 +108,7 @@ class Kubernetes:
             namespace=namespace,
         )
         resp = self.request('GET', url, params=params)
-        items = resp.json()['items']
+        items = resp.json()['items'] or []
         return [cls(self, item) for item in items]
 
 
