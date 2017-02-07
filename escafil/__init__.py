@@ -14,7 +14,7 @@ def validate_namespace(cls, namespace):
     return namespace
 
 
-class Kubernetes(object):
+class Kubernetes:
     def __init__(self, url=None, cacert=None, token=None, in_cluster=False):
         if in_cluster:
             self.url = CLUSTER_URL
